@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    var manager: OneShotLocationManager?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        manager = OneShotLocationManager()
+        manager!.fetchWithCompletion {location, error in
+            if let loc = location {
+                println(location)
+                
+            } else if let err = error {
+                println(err.localizedDescription)
+            }
+        }
+        }
+    
 }
 

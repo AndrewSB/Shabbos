@@ -13,6 +13,9 @@
 		469C65F11A6077C100758740 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469C65F01A6077C100758740 /* Images.xcassets */; };
 		469C65F41A6077C100758740 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469C65F21A6077C100758740 /* LaunchScreen.xib */; };
 		469C66001A6077C100758740 /* ShabbosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C65FF1A6077C100758740 /* ShabbosTests.swift */; };
+		469C660A1A607DF500758740 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C66091A607DF500758740 /* SwiftyJSON.swift */; };
+		469C660C1A607EDC00758740 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C660B1A607EDC00758740 /* CoreLocation.framework */; };
+		469C660F1A6083F300758740 /* OneShotLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C660E1A6083F300758740 /* OneShotLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		469C65F91A6077C100758740 /* ShabbosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShabbosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		469C65FE1A6077C100758740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		469C65FF1A6077C100758740 /* ShabbosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShabbosTests.swift; sourceTree = "<group>"; };
+		469C66091A607DF500758740 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		469C660B1A607EDC00758740 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		469C660E1A6083F300758740 /* OneShotLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneShotLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469C660C1A607EDC00758740 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		469C65DB1A6077C100758740 = {
 			isa = PBXGroup;
 			children = (
+				469C660D1A607EEC00758740 /* Frameworks */,
 				469C65E61A6077C100758740 /* Shabbos */,
 				469C65FC1A6077C100758740 /* ShabbosTests */,
 				469C65E51A6077C100758740 /* Products */,
@@ -110,6 +118,16 @@
 				469C65FE1A6077C100758740 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		469C660D1A607EEC00758740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469C660E1A6083F300758740 /* OneShotLocationManager.swift */,
+				469C66091A607DF500758740 /* SwiftyJSON.swift */,
+				469C660B1A607EDC00758740 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469C660A1A607DF500758740 /* SwiftyJSON.swift in Sources */,
 				469C65EC1A6077C100758740 /* ViewController.swift in Sources */,
 				469C65EA1A6077C100758740 /* AppDelegate.swift in Sources */,
+				469C660F1A6083F300758740 /* OneShotLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
