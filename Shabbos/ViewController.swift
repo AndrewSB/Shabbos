@@ -18,12 +18,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         manager!.fetchWithCompletion {location, error in
             if let loc = location {
                 println(location)
-                
+                self.requestAPI(location)
             } else if let err = error {
                 println(err.localizedDescription)
             }
         }
         }
     
+    func requestAPI(location: CLLocation!) {
+        let urlPath: String = "http://db.ou.org/zmanim/getCalendarData.php?mode=day&lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&dateBegin=\(NSDate())"
+    }
 }
 
